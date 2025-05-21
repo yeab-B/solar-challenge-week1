@@ -80,7 +80,7 @@ solar-challenge-week1/
 │   ├── __init__.py
 │   ├── main.py                    # Main Streamlit app
 │   └── utils.py                   # Helper functions (load, plot, summarize)
-├── data/                          # Cleaned & raw datasets (not tracked)
+├── data/                          
 ├── dashboard_screenshots/         # Images of the dashboard
 │   └── solar_dashboard_preview.png
 ├── notebook/                      # Jupyter notebooks (EDA & cleaning)
