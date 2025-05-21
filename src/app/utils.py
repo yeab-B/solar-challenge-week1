@@ -17,8 +17,8 @@ def load_data(countries):
     """
     dfs = {}
     # Assuming utils.py is in /project_root/src/app/utils.py
-    # and the data directory is /project_root/data/
-    base_path = Path(__file__).resolve().parents[2] / "data"
+    # and the data directory is /project_root/src/data/
+    base_path = Path(__file__).resolve().parents[1] / "data"
     for country in countries:
         file_name = f"{country.lower().replace(' ', '_')}_clean.csv"
         path = base_path / file_name
