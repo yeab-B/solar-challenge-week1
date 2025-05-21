@@ -1,9 +1,7 @@
 
+# 🌞 Solar Challenge – Week 0 
 
-
-# 🌞 Solar Challenge – Week 0 Dashboard
-
-Welcome to the **solar-challenge-week1** project! This repository contains data profiling, cleaning, exploratory data analysis (EDA), and a Streamlit dashboard comparing solar metrics (GHI, DNI, DHI) across **Benin**, **Sierra Leone**, and **Togo**.
+Welcome to the **solar-challenge-week0** project! This repository contains data profiling, cleaning, exploratory data analysis (EDA), and a Streamlit dashboard comparing solar metrics (GHI, DNI, DHI) across **Benin**, **Sierra Leone**, and **Togo**.
 
 ---
 
@@ -67,7 +65,7 @@ pytest
 ### 6. Launch the Dashboard
 
 ```bash
-cd src/app
+cd app
 streamlit run main.py
 ```
 
@@ -78,22 +76,21 @@ streamlit run main.py
 ```bash
 solar-challenge-week1/
 ├── .github/workflows/             # GitHub Actions for CI/CD
+├── app/                           # Streamlit dashboard
+│   ├── __init__.py
+│   ├── main.py                    # Main Streamlit app
+│   └── utils.py                   # Helper functions (load, plot, summarize)
+├── data/                          # Cleaned & raw datasets (not tracked)
+├── dashboard_screenshots/         # Images of the dashboard
+│   └── solar_dashboard_preview.png
+├── notebook/                      # Jupyter notebooks (EDA & cleaning)
+├── scripts/                       # Utility scripts and helpers
+│   ├── __init__.py
+│   └── README.md
+├── tests/                         # Unit and integration tests
 ├── requirements.txt               # Project dependencies
-├── README.md                      # Project documentation
-├── WEEK0_REPORT.md                # Final report (Medium-style format)
-└── src/
-    ├── app/                       # Streamlit dashboard
-    │   ├── __init__.py
-    │   ├── main.py                # Main dashboard script
-    │   └── utils.py               # Helper functions (load, plot, summarize)
-    ├── data/                      # Cleaned & raw data (ignored in GitHub)
-    ├── dashboard_screenshots/     # Dashboard images
-    │   └── solar_dashboard_preview.png
-    ├── notebook/                  # Jupyter notebooks (EDA & cleaning)
-    ├── scripts/                   # Utility scripts and helpers
-    │   ├── __init__.py
-    │   └── README.md
-    └── tests/                     # Unit and integration tests
+├── README.md                      # Project setup and documentation
+└── WEEK0_REPORT.md                # Final Week 0 blog-style report
 ```
 
 ---
@@ -125,8 +122,9 @@ solar-challenge-week1/
 
 ## 📸 Dashboard Preview
 
-![Dashboard Screenshot](src/dashboard_screenshots/solar_dashboard_preview.png)
-
+![Dashboard Screenshot](dashboard_screenshots/solar_dashboard_preview1.png)
+![Dashboard Screenshot](dashboard_screenshots/solar_dashboard_preview2.png)
+![Dashboard Screenshot](dashboard_screenshots/solar_dashboard_preview3.png)
 ---
 
 ## 🧪 Development Notes
@@ -145,17 +143,3 @@ For issues, suggestions, or improvements, feel free to:
 * Open a pull request with your proposed change
 
 ---
-
-**Happy Hacking! ☀️**
-
-```
-
----
-
-### ✅ Next Steps:
-- Save this file as `README.md` at the root of your project.
-- Make sure `solar_dashboard_preview.png` is placed inside `src/dashboard_screenshots/`.
-- Push changes to GitHub.
-
-Would you like help preparing the `WEEK0_REPORT.md` in a Medium-style blog format too?
-```
