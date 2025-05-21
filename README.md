@@ -95,30 +95,6 @@ solar-challenge-week1/
 
 ---
 
-## 📈 Key Performance Indicators (KPIs)
-
-### ✅ Dashboard Usability
-
-* **Clear labels**, **dropdowns**, and **tabbed layout** for intuitive navigation.
-* Responsive layout using Streamlit’s native container and tab system.
-
-### ✅ Interactive Elements
-
-* `multiselect` widget to choose countries dynamically.
-* `plotly` interactive boxplots with zoom and hover features.
-* Scrollable and sortable summary table (mean, median, std. dev).
-
-### ✅ Visual Appeal
-
-* Professional design using consistent font sizes and colors.
-* Boxplots clearly distinguish solar metrics across countries.
-
-### ✅ Deployment Success
-
-* Fully functional local deployment using Streamlit.
-* Public hosting possible via **Streamlit Cloud** or **Render** (not part of current submission).
-
----
 
 ## 📸 Dashboard Preview
 
@@ -127,19 +103,10 @@ solar-challenge-week1/
 ![Dashboard Screenshot](dashboard_screenshots/solar_dashboard_preview3.png)
 ---
 
-## 🧪 Development Notes
 
-* Activate your virtual environment each session (`source .venv/bin/activate`)
-* Use GitHub issues and PRs to track changes collaboratively.
-* CI runs automatically on pushes to `main` and `setup-task` branches.
+## 🧑‍💻 Author
 
----
+**Yeabsira Behaile**
 
-## 📬 Contact & Contributions
+Prepared as part of the Week 0 challenge at **10 Academy**
 
-For issues, suggestions, or improvements, feel free to:
-
-* Submit an issue on [GitHub Issues](https://github.com/yabe-B/solar-challenge-week1/issues)
-* Open a pull request with your proposed change
-
----
