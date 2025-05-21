@@ -1,4 +1,4 @@
-# app/main.py
+"""Streamlit dashboard for visualizing solar energy data."""
 import streamlit as st
 import pandas as pd
 from utils import load_data, plot_boxplot, plot_summary_table
