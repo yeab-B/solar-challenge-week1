@@ -1,4 +1,6 @@
 """Utility functions for loading and plotting solar data."""
+from pathlib import Path  # Import Path
+
 import pandas as pd
 import plotly.express as px
 
@@ -14,11 +16,20 @@ def load_data(countries):
             pandas DataFrames.
     """
     dfs = {}
+    # Assuming utils.py is in /project_root/src/app/utils.py
+    # and the data directory is /project_root/data/
+    base_path = Path(__file__).resolve().parents[2] / "data"
     for country in countries:
-        path = f"data/{country.lower().replace(' ', '_')}_clean.csv"
-        df = pd.read_csv(path, parse_dates=["Timestamp"])
-        df["Country"] = country
-        dfs[country] = df
+        file_name = f"{country.lower().replace(' ', '_')}_clean.csv"
+        path = base_path / file_name
+        try:
+            df = pd.read_csv(path, parse_dates=["Timestamp"])
+            df["Country"] = country
+            dfs[country] = df
+        except FileNotFoundError:
+            print(f"Warning: Data file not found for {country} at {path}")
+            # Or handle as an error string as in your main.py
+            dfs[country] = None
     return dfs
 
 
