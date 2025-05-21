@@ -24,7 +24,7 @@ cd solar-challenge-week1
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate      # On Windows: .venv\Scripts\activate
+source .venv/bin/activate      
 ```
 
 #### Using Conda
@@ -80,7 +80,7 @@ solar-challenge-week1/
 │   ├── __init__.py
 │   ├── main.py                    # Main Streamlit app
 │   └── utils.py                   # Helper functions (load, plot, summarize)
-├── data/                          # Cleaned & raw datasets (not tracked)
+├── data/                          
 ├── dashboard_screenshots/         # Images of the dashboard
 │   └── solar_dashboard_preview.png
 ├── notebook/                      # Jupyter notebooks (EDA & cleaning)
