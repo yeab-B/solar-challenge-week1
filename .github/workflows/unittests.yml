@@ -2,11 +2,11 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - main
+      - financial-news-sentiment-analysis
       - task-*
   pull_request:
     branches:
-      - main
+      - financial-news-sentiment-analysis
 jobs:
   test:
     runs-on: ubuntu-latest
