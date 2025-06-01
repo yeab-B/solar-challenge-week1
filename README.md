@@ -90,7 +90,7 @@ solar-challenge-week1/
 ├── tests/                         # Unit and integration tests
 ├── requirements.txt               # Project dependencies
 ├── README.md                      # Project setup and documentation
-└── WEEK0_REPORT.md                # Final Week 0 blog-style report
+
 ```
 
 ---
